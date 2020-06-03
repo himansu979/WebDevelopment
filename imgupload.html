@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML form exercise</title>
+</head>
+<body>
+    <h1>Image Upload</h1>
+
+    <!-- tag, attribute key=value
+    form tag, has two attributes
+    action : where the form send data to
+    method = which http method
+    method has to be "" or GET to go to result.html page
+    -->
+
+    <!-- <form action="result.html" method="GET">
+        <label for="input1">Username:</label>
+        <input name="input1" id="input1" type="text" placeholder="username" required>
+        <label for="input2">Password:</label>
+        <input name="input2" id="input2" type="password" placeholder="password" required>
+        <input type="submit">
+    </form> -->
+
+
+    <!-- <label for="image">
+       <input type="file" style="display:none;"/>
+       <img src="">
+    </label> -->
+
+    <form action="" method="POST" enctype="multipart/form-data">
+         <input type="file" id="file1" name="filename">
+         <input type="submit" onclick="myFunction()">
+         <img src="" alt="">
+   </form>
+
+   <script>
+   function myFunction() {
+     var x = document.getElementById("file1").files[0].name;
+     console.log(x)
+     // x.disabled = true;
+   }
+   </script>
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications -->
+
+
+</body>
+</html>
