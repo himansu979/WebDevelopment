@@ -25,7 +25,10 @@ public class Send_XML_Post_Request_1 {
 
             HttpURLConnection con = (HttpURLConnection) obj.openConnection();
             con.setRequestMethod("POST");
-            con.setRequestProperty("Content-Type","application/soap+xml; charset=utf-8");
+            //con.setRequestProperty("Content-Type","application/soap+xml; charset=utf-8");
+
+            con.setRequestProperty("Content-Type","text/xml; charset=utf-8");
+
             /*
             String countryCode="Canada";
             String xml = "<?xml version=\"1.0\" encoding=\"utf-8\"?>" +
